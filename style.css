@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --deault-delay: 1;
+    font-size: 62.5%;
+}
+body {
+    display: grid;
+    place-items: center;
+    font-size: 1.6%;
+}
+#main {
+    margin: 0 auto;
+    width: 144rem;
+    height: 102.4rem;
+    background-image: url(./imagens/fundo.svg);
+}
+.toupeiras {
+    margin: 30rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    width: 105rem;
+}
+.mole {
+    width: 22.2rem;
+    height: 16.8rem;
+    background-image: url(./imagens/toupeira6.svg) ; 
+}
+.animated1 {
+    animation: toupeira .7s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+.animated2 {
+    animation: toupeira .7s;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+
+}
+.animated3 {
+    animation: toupeira .7s;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+}
+@keyframes toupeira {
+    0% {
+        background-image: url(./imagens/toupeira1.svg);
+    }
+    20% {
+        background-image: url(./imagens/toupeira2.svg);
+    }
+    40% {
+        background-image: url(./imagens/toupeira3.svg);
+    }
+    60% {
+        background-image: url(./imagens/toupeira4.svg);
+    }
+    80% {
+        background-image: url(./imagens/toupeira5.svg);
+    }
+    100% {
+        background-image: url(./imagens/toupeira6.svg);
+    }
+}
